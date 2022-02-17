@@ -5,10 +5,12 @@ import { block } from "./data";
 
 export function App() {
   return (
-    <pre>
+    <main>
       <p>An empty React app to get you started! Edit index.tsx</p>
-      <p>◀ ▼ ▲ ▶</p>
-      {JSON.stringify(block, null, 2)}
-    </pre>
+      <pre>
+        <p>◀ ▼ ▲ ▶</p>
+        {JSON.stringify(block, null, 2)}
+      </pre>
+    </main>
   );
 }
