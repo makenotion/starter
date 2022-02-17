@@ -1,11 +1,13 @@
-import Head from "next/head"
-import styles from "../styles/Home.module.css"
-import { block } from "./data"
+import { useLayoutEffect, useState } from "react";
+import { App } from "..";
 
-export default function Home() {
-    return (
-        <pre>
-            <code>{JSON.stringify(block, null, 2)}</code>
-        </pre>
-    )
+export default function HomePage() {
+  // Only render on the client
+  const [isBrowser, setIsBrowser] = useState(false);
+  useLayoutEffect(() => setIsBrowser(true), []);
+  if (!isBrowser) {
+    return null;
+  }
+
+  return <App />;
 }
