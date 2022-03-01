@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { App } from "..";
+import { App } from "../App";
 
 export default function HomePage() {
   // Only render on the client

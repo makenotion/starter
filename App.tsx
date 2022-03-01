@@ -3,13 +3,15 @@
 
 import { block } from "./data";
 
+console.log(block);
+
 export function App() {
   return (
     <main>
-      <p>An empty React app to get you started! Edit index.tsx</p>
+      <p>An empty React app to get you started! Edit me in App.tsx</p>
       <pre>
         <p>◀ ▼ ▲ ▶</p>
-        {JSON.stringify(block, null, 2)}
+        <p>Check your browser console ⏭</p>
       </pre>
     </main>
   );
